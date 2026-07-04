@@ -1,0 +1,38 @@
+<div class="modal-backdrop" (click)="close.emit()">
+  <div class="massage-modal" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="close.emit()">✕</button>
+
+    <div class="modal-image">
+      <img [src]="'/images/Experiencias/' + massage.image" [alt]="massage.name" />
+    </div>
+
+    <div class="modal-content">
+      <span class="collection">
+        {{ massage.collection.name }}
+      </span>
+      <h2>
+        {{ massage.name }}
+      </h2>
+      <h3>
+        {{ massage.subtitle }}
+      </h3>
+      <p>
+        {{ massage.description }}
+      </p>
+
+      <div class="prices">
+
+        @for (price of massage.prices; track $index) {
+          <div class="price-row">
+            <span class="duration">{{ price.duration }} min</span>
+            <span class="price">{{ price.price }} €</span>
+          </div>
+        }
+      </div>
+      <a class="reserve-btn" href="https://wa.me/34611821056" target="_blank">
+        Reservar experiencia
+      </a>
+
+    </div>  
+  </div>
+</div>

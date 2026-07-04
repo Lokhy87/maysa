@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Angular
+maysaFront/node_modules/
+maysaFront/dist/
+maysaFront/.angular/
+
+# Symfony
+maysa/vendor/
+maysa/var/
+
+# Variables de entorno
+maysa/.env
+maysa/.env.local
+maysa/.env.*.local
+
+# Archivos comprimidos
+*.zip
+
+# Logs
+*.log

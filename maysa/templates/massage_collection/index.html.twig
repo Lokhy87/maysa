@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MassageCollection index{% endblock %}
+
+{% block body %}
+    <h1>MassageCollection index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Icon</th>
+                <th>Position</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for massage_collection in massage_collections %}
+            <tr>
+                <td>{{ massage_collection.id }}</td>
+                <td>{{ massage_collection.name }}</td>
+                <td>{{ massage_collection.description }}</td>
+                <td>{{ massage_collection.icon }}</td>
+                <td>{{ massage_collection.position }}</td>
+                <td>
+                    <a href="{{ path('app_massage_collection_show', {'id': massage_collection.id}) }}">show</a>
+                    <a href="{{ path('app_massage_collection_edit', {'id': massage_collection.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_massage_collection_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,52 @@
+.why-maysa {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 70px;
+  padding: 90px 8%;
+  background: #111111;
+}
+
+.why-maysa h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  color: #d4af37;
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  color: #e5dfd5;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-bottom: 38px;
+}
+
+.why-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 35px;
+}
+
+.why-item h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.why-item p {
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d8d2c8;
+  margin: 0;
+}
+
+.why-image img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 18px;
+}

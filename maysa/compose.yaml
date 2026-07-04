@@ -1,0 +1,29 @@
+services:
+  mariadb:
+    image: mariadb:10.11
+    container_name: maysa_mariadb
+    restart: "no"
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: maysa
+      MARIADB_USER: maysa_user
+      MARIADB_PASSWORD: maysa_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - maysa_mariadb_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: maysa_phpmyadmin
+    restart: "no"
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+    depends_on:
+      - mariadb
+
+volumes:
+  maysa_mariadb_data:

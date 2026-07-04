@@ -1,0 +1,36 @@
+<section class="experiences-page">
+  <h1>Experiencias Maysa</h1>
+
+  @for (collection of collections; track collection.id) {
+    <section class="collection-block">
+
+      <div class="collection-hero">
+        <h2>{{ collection.name }}</h2>
+        <p>{{ collection.description }}</p>
+        <div class="gold-line"></div>
+      </div>
+
+      <div class="massage-grid">
+        @for (massage of getMassagesByCollection(collection.name); track massage.id) {
+          <article class="massage-card">
+            <img [src]="'/images/Experiencias/' + massage.image" [alt]="massage.name">
+
+            <div class="massage-content">
+              <h3>{{ massage.name }}</h3>
+              <p>{{ massage.subtitle }}</p>
+              <button (click)="openModal(massage)">Descubrir experiencia</button>
+            </div>
+          </article>
+        }
+      </div>
+
+    </section>
+  }
+</section>
+
+@if (selectedMassage; as massage) {
+  <app-modal
+    [massage]="massage"
+    (close)="closeModal()">
+  </app-modal>
+}

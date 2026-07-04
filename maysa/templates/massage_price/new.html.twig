@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New MassagePrice{% endblock %}
+
+{% block body %}
+    <h1>Create new MassagePrice</h1>
+
+    {{ include('massage_price/_form.html.twig') }}
+
+    <a href="{{ path('app_massage_price_index') }}">back to list</a>
+{% endblock %}
