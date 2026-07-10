@@ -1,46 +1,81 @@
 .maysa-navbar {
-  width: 100%;
-  height: 125px;
-  background: #050505;
-  display: flex;
-  align-items: center;
   position: relative;
   z-index: 1000;
+
+  width: 100%;
+  height: 125px;
+
+  background: #050505;
 }
 
+/* Contenedor principal */
 .nav-container {
+  position: relative;
+
   width: 100%;
   max-width: 1600px;
+  height: 100%;
+
   margin: 0 auto;
   padding: 0 70px;
+
   display: grid;
   grid-template-columns: 260px 1fr;
   align-items: center;
+
+  box-sizing: border-box;
 }
 
+/* Logo */
+.logo {
+  position: relative;
+
+  display: block;
+  width: 260px;
+  height: 100%;
+}
+
+/*
+ * La imagen queda fuera del flujo normal.
+ * Así puede seguir siendo grande sin aumentar
+ * la altura de la navbar ni desplazar el menú.
+ */
 .logo img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
   height: 240px;
   width: auto;
+
   display: block;
+
+  transform: translateY(-50%);
 }
 
+/* Menú principal */
 .nav-menu {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
+
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
 
 .nav-menu a {
   font-family: 'Jost', sans-serif;
-  color: #ffffff;
-  text-decoration: none;
   font-size: 14px;
   letter-spacing: 1.8px;
   text-transform: uppercase;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: color 0.25s ease;
 }
 
 .nav-menu a:hover,
@@ -48,6 +83,51 @@
   color: #d4af37;
 }
 
+/* Selector de idioma */
+.language-selector {
+  position: absolute;
+  top: 10px;
+  right: 70px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.language-button {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  cursor: pointer;
+
+  transition: color 0.25s ease;
+}
+
+.language-button:hover {
+  color: #ffffff;
+}
+
+.language-button.active {
+  color: #d4af37;
+}
+
+.language-separator {
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+
+  color: rgba(255, 255, 255, 0.25);
+}
+
+/* Botón hamburguesa */
 .menu-toggle {
   display: none;
 }
@@ -63,22 +143,41 @@
     grid-template-columns: 1fr auto;
   }
 
+  .logo {
+    width: 220px;
+  }
+
   .logo img {
     height: 200px;
+  }
+
+  .language-selector {
+    top: 8px;
+    right: 82px;
+  }
+
+  .language-button,
+  .language-separator {
+    font-size: 10px;
   }
 
   .menu-toggle {
     display: flex;
     flex-direction: column;
     gap: 7px;
+
+    padding: 0;
+
     background: transparent;
     border: none;
+
     cursor: pointer;
   }
 
   .menu-toggle span {
     width: 34px;
     height: 1px;
+
     background: #d4af37;
   }
 
@@ -86,14 +185,19 @@
     position: absolute;
     top: 95px;
     left: 0;
+
     width: 100%;
+
     display: none;
     flex-direction: column;
     gap: 0;
-    background: #050505;
-    border-top: 1px solid rgba(212,175,55,.25);
-    border-bottom: 1px solid rgba(212,175,55,.25);
+
     padding: 25px 0;
+
+    background: #050505;
+
+    border-top: 1px solid rgba(212, 175, 55, 0.25);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
   }
 
   .nav-menu.open {
