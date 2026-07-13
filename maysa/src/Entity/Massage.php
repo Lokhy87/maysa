@@ -44,9 +44,17 @@ class Massage
     #[ORM\OneToMany(targetEntity: MassagePrice::class, mappedBy: 'massage')]
     private Collection $massagePrices;
 
+    /**
+     * @var Collection<int, MassageTranslation>
+     */
+    #[ORM\OneToMany(targetEntity: MassageTranslation::class, mappedBy: 'massage', cascade: ['persist', 'remove'], orphanRemoval: true)]
+    private Collection $massageTranslations;
+
+
     public function __construct()
     {
         $this->massagePrices = new ArrayCollection();
+        $this->massageTranslations = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -167,4 +175,35 @@ class Massage
 
         return $this;
     }
+
+    /**
+     * @return Collection<int, MassageTranslation>
+     */
+    public function getMassageTranslations(): Collection
+    {
+        return $this->massageTranslations;
+    }
+
+    public function addMassageTranslation(MassageTranslation $massageTranslation): static
+    {
+        if (!$this->massageTranslations->contains($massageTranslation)) {
+            $this->massageTranslations->add($massageTranslation);
+            $massageTranslation->setMassage($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMassageTranslation(MassageTranslation $massageTranslation): static
+    {
+        if ($this->massageTranslations->removeElement($massageTranslation)) {
+            // set the owning side to null (unless already changed)
+            if ($massageTranslation->getMassage() === $this) {
+                $massageTranslation->setMassage(null);
+            }
+        }
+
+        return $this;
+    }
+
 }
