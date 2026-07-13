@@ -5,6 +5,140 @@
     "ABOUT": "About Maysa",
     "CONTACT": "Contact"
   },
+  "HERO": {
+    "H4": "An exclusive experience crafted to restore body and mind.",
+    "A": "BOOK NOW",
+    "BUTTON": "EXPLORE EXPERIENCES"
+  },
+  "CARROUSEL": {
+    "P1": "Discover our exclusive collections",
+    "P2": "Relax · Balance · Harmony",
+    "P3": "Elegance · Passion · Sensation",
+    "P4": "Exclusivity · Luxury · Excellence",
+    "P5": "Together · Connection · Unforgettable Moments"
+  },
+  "FEATURES-CARD": {
+    "H3_1": "PREMIUM EXPERIENCE",
+    "P1": "An exclusive environment designed for relaxation, comfort and well-being.",
+
+    "H3_2": "PREMIUM PRODUCTS",
+    "P2": "High-quality oils and carefully selected products for every experience.",
+
+    "H3_3": "PROFESSIONAL THERAPISTS",
+    "P3": "Experienced therapists dedicated to delivering exceptional service.",
+
+    "H3_4": "ABSOLUTE DISCRETION",
+    "P4": "Your privacy, comfort and confidentiality are always our highest priority."
+  },
+  "WHY-MAYSA": {
+    "H2": "WHY MAYSA?",
+    "P1": "More than a massage, an experience designed to reconnect body, mind and senses.",
+
+    "H5": "Premium Experience",
+    "P2": "Every detail is carefully prepared to create an exclusive, elegant atmosphere focused on your well-being.",
+
+    "H5_2": "Personalized Well-being",
+    "P3": "Every treatment is tailored to your individual needs, ensuring a truly unique and personalized experience.",
+
+    "H5_3": "Privacy & Trust",
+    "P4": "We provide a private, secure and discreet environment, allowing you to relax with complete peace of mind.",
+
+    "H5_4": "Excellence in Every Detail",
+    "P5": "From personalized attention to carefully selected premium products, every detail is designed to exceed your expectations."
+  },
+
+  "EXPERIENCES": {},
+
+  "ABOUT": {
+    "SPAN_1": "About Maysa",
+    "H1": "More than a massage.",
+    "H3": "An experience created to be remembered.",
+    "P_1": "At Maysa, we believe true luxury is not about having more, but about taking time for yourself. Every experience has been carefully designed so that, for a few moments, the outside world disappears and only one person matters: you.",
+    "A": "Discover Experiences",
+
+    "SPAN_2": "Our Story",
+    "H2": "Why was Maysa created?",
+    "P_2": "Maysa was born from a simple idea: to create a place where well-being becomes more than a service—it becomes an experience. We live surrounded by busy schedules, stress and endless responsibilities. Every day demands more of our time, energy and attention. We wanted to do the opposite: create a space where time slows down.",
+
+    "SPAN_3": "Our Essence",
+    "H2_2": "Our Philosophy",
+
+    "H3_2": "Well-being",
+    "P_3": "We don't believe in rushed treatments. We believe in giving every guest the time they need to truly relax and feel their best.",
+
+    "H3_3": "Exclusivity",
+    "P_4": "Every experience is individually prepared. Every detail is thoughtfully designed with you in mind.",
+
+    "H3_4": "Elegance",
+    "P_5": "True elegance never needs to demand attention. It lives in the smallest details.",
+
+    "SPAN_4": "What Makes Us Different",
+    "H2_3": "The Maysa Difference",
+
+    "SPAN_5": "We don't aim to perform more massages.",
+    "P_6": "We aim to create unforgettable memories.",
+
+    "SPAN_6": "We don't measure time.",
+    "P_7": "We measure how you feel when your experience comes to an end.",
+
+    "SPAN_7": "We don't follow a fixed routine.",
+    "P_8": "Every session begins by listening to you.",
+
+    "SPAN_8": "We don't believe in ostentatious luxury.",
+    "P_9": "We believe in luxury that is truly felt.",
+
+    "SPAN_9": "Our Commitment",
+    "H2_4": "Every Detail Matters.",
+    "P_10": "From the music that welcomes you to the room temperature, the aromas, the lighting and the care you receive, nothing is left to chance. We believe unforgettable experiences are not defined by a single moment, but by every small detail that creates them.",
+
+    "SPAN_10": "Our Promise",
+    "H2_5": "An Experience Designed for You.",
+    "P_11": "At Maysa, we want to offer you more than just a massage.",
+    "P_12": "We want you to forget the rush, the worries and the noise of everyday life while you are with us.",
+    "P_13": "Our commitment is to provide an experience crafted with exceptional attention to detail, where well-being, elegance and personalized care are always at the heart of everything we do.",
+    "P_14": "If you leave feeling relaxed, refreshed and truly reconnected with yourself, then we have fulfilled our mission.",
+
+    "BLOCKQUOTE": "Because true luxury is not measured by what you own, but by how you feel.",
+
+    "A_2": "Book My Experience"
+  },
+
+  "CONTACT": {
+    "SPAN": "Contact",
+    "H1": "Book Your Wellness Experience",
+    "P_1": "At Maysa, every experience is tailored to you. Contact us and we will offer personalized, discreet and professional guidance to help you find the perfect massage.",
+
+    "H2": "We Are Here for You",
+
+    "LOCATION": "📍 Location",
+    "CITY": "Gandía, Valencia",
+
+    "EMAIL": "✉️ Email",
+
+    "PHONE": "💬 Phone / WhatsApp",
+
+    "WHATSAPP_BUTTON": "Book via WhatsApp",
+
+    "H3_1": "Opening Hours",
+    "DAYS": "Monday to Sunday",
+
+    "H3_2": "Personalized Assistance",
+    "P_2": "Not sure which massage to choose? Tell us what you need and we will help you select the experience that best suits your preferences, goals and current needs.",
+
+    "H3_3": "Quick Response",
+    "P_3": "We usually respond within a few minutes via WhatsApp during our opening hours."
+  },
+
+  "FOOTER": {
+    "BRAND": "Luxury wellness experiences designed to relax the body, calm the mind and awaken the senses.",
+    "LOCATION": "Location",
+    "CITY": "Gandia, Valencia",
+    "EMAIL": "Email",
+    "INSTA": "Instagram",
+    "PHONE": "Phone | WhatsApp",
+    "WHATSAPP": "Book via WhatsApp",
+    "CLOSE": "© 2026 Maysa Luxury Massages. All rights reserved."
+  },
   "COMMON": {
     "SPANISH": "Spanish",
     "ENGLISH": "English"

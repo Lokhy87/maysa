@@ -5,6 +5,142 @@
     "ABOUT": "Sobre Maysa",
     "CONTACT": "Contacto"
   },
+  "HERO": {
+    "H4": "Una experiencia exclusiva diseñada para desconectar cuerpo y mente.",
+    "A": "RESERVAR AHORA",
+    "BUTTON": "VER MASAJES"
+  },
+  "CARROUSEL": {
+    "P1": "Descubre nuestras colecciones exclusivas",
+    "P2": "Relajación · Equilibrio · Armonía",
+    "P3": "Elegancia · Pasión · Sensaciones",
+    "P4": "Exclusividad · Lujo · Excelencia",
+    "P5": "Juntos · Conexión · Momentos inolvidables"
+  },
+  "FEATURES-CARD": {
+    "H3_1": "EXPERIENCIA PREMIUM",
+    "P1": "Un entorno exclusivo diseñado para el bienestar y la relajacion.",
+
+    "H3_2": "PRODUCTOS SELECTOS",
+    "P2": "Aceites y productos cuidadosamente seleccionados para cada experiencia.",
+
+    "H3_3": "PROFESIONALES CUALIFICADOS",
+    "P3": "Profesionle con experiencia dedicadas a ofrecer un servicio excepcional.",
+
+    "H3_4": "DISCRECION ABSOLUTA",
+    "P4": "Tu privacidad, comodidad y confidencialidad son siempre nuestra prioridad."
+  },
+  "WHY-MAYSA": {
+    "H2": "¿PORQUE MAYSA?",
+    "P1": "Más que un masaje, una experiencia diseñada para reconectar cuertpo, mente y sentidos.",
+
+    "H5": "Experiencia premium",
+    "P2": "Cada detalle está cuidadosamente preparado para ofrecer un ambiente exclusivo, elegante y pensado para tu bienestar.",
+
+    "H5_2": "Bienestar personalizado",
+    "P3": "Adaptamos cada tratamiento a tus necesidades para que disfrutes de una experiencia única y completamente personalizada.",
+
+    "H5_3": "Privacidad y confianza",
+    "P4": "Garantizamos un entorno íntimo, seguro y discreto para que solo tengas que preocuparte por relajarte.",
+
+    "H5_4": "Excelencia en cada detalle",
+    "P5": "Desde la atención personalizada hasta la selección de productos premium, todo está pensado para superar tus expectativas."
+  },
+
+  "EXPERIENCES": {},
+
+  "ABOUT": {
+    "SPAN_1": "Sobre Maysa",
+    "H1": "Más que un masaje.",
+    "H3": "Una experiencia creada para recordar.",
+    "P_1": "En Maysa creemos que el verdadero lujo no consiste en tener más, sino en dedicarte tiempo a ti mismo. Cada experiencia ha sido diseñada para que durante unos instantes el mundo desaparezca y solo exista una persona: tú.",
+    "A": "Descubrir experiencias",
+
+    "SPAN_2": "Nuestra historia",
+    "H2": "¿Por qué nació Maysa?",
+    "P_2": "Maysa nació de una idea muy sencilla: crear un lugar donde el bienestar dejara de ser un servicio para convertirse en una experiencia. Vivimos rodeados de prisas, estrés y obligaciones. Cada día nos exige más tiempo, más energía y más atención. Nosotros queríamos hacer justo lo contrario: crear un espacio donde el tiempo se detuviera.",
+
+    "SPAN_3": "Nuestra esencia",
+    "H2_2": "Nuestra filosofía",
+
+    "H3_2": "Bienestar",
+    "P_3": "No creemos en tratamientos rápidos. Creemos en dedicar el tiempo necesario para que cada persona vuelva a sentirse bien.",
+
+    "H3_3": "Exclusividad",
+    "P_4": "Cada experiencia está preparada de forma individual. Cada detalle está pensado para ti.",
+
+    "H3_4": "Elegancia",
+    "P_5": "La elegancia no necesita llamar la atención. Se encuentra en los pequeños detalles.",
+
+    "SPAN_4": "Nuestra diferencia",
+    "H2_3": "Lo que nos hace diferentes",
+
+    "SPAN_5": "No buscamos hacer más masajes.",
+    "P_6": "Buscamos crear recuerdos.",
+
+    "SPAN_6": "No medimos el tiempo.",
+    "P_7": "Medimos cómo te sientes cuando termina la experiencia.",
+
+    "SPAN_7": "No seguimos un protocolo.",
+    "P_8": "Cada sesión comienza escuchándote.",
+
+    "SPAN_8": "No creemos en el lujo ostentoso.",
+    "P_9": "Creemos en el lujo que se siente.",
+
+    "SPAN_9": "Nuestro compromiso",
+    "H2_4": "Cada detalle importa.",
+    "P_10": "Desde la música que escuchas al entrar hasta la temperatura de la sala, los aromas, la iluminación y el trato que recibes. Nada está colocado por casualidad. Porque creemos que una experiencia inolvidable no depende de un único momento. Depende de todos los pequeños detalles que la forman.",
+
+    "SPAN_10": "Nuestra promesa",
+    "H2_5": "Una experiencia pensada para ti.",
+    "P_11": "En Maysa no queremos que vengas únicamente a recibir un masaje.",
+    "P_12": "Queremos que, durante el tiempo que pases con nosotros, olvides las prisas, las preocupaciones y el ruido del día a día.",
+    "P_13": "Nuestro compromiso es ofrecerte una experiencia cuidada hasta el último detalle, donde el bienestar, la elegancia y la atención personalizada sean siempre los protagonistas.",
+    "P_14": "Si al salir sientes que has conseguido desconectar, respirar y dedicarte un momento solo para ti, entonces habremos cumplido nuestra misión.",
+
+    "BLOCKQUOTE": "Porque el verdadero lujo no se mide por lo que tienes, sino por cómo te sientes.",
+
+    "A_2": "Reservar mi experiencia"
+  },
+
+  "CONTACT": {
+    "SPAN": "Contacto",
+    "H1": "Reserva tu experiencia de bienestar",
+    "P_1": "En Maysa cada experiencia se adapta a ti. Ponte en contacto con nosotros y te asesoraremos de forma totalmente personalizada, discreta y profesional para encontrar el masaje perfecto.",
+
+    "H2": "Estamos a tu disposición",
+
+    "LOCATION": "📍 Ubicación",
+    "CITY": "Gandía, Valencia",
+
+    "EMAIL": "✉️ Email",
+
+    "PHONE": "💬 Teléfono / WhatsApp",
+
+    "WHATSAPP_BUTTON": "Reservar por WhatsApp",
+
+    "H3_1": "Horario de atención",
+    "DAYS": "Lunes a domingo",
+    "HOURS": "12:00 — 03:00",
+
+    "H3_2": "Atención personalizada",
+    "P_2": "Si no sabes qué masaje elegir, cuéntanos qué necesitas. Te ayudaremos a escoger la experiencia que mejor se adapte a tu momento, preferencias y objetivos.",
+
+    "H3_3": "Respuesta rápida",
+    "P_3": "Respondemos habitualmente en pocos minutos a través de WhatsApp durante nuestro horario de atención."
+  },
+
+  "FOOTER": {
+    "BRAND": "Experiencias de lujo diseñadas para desconectar cuerpo, mente y sentidos.",
+    "LOCATION": "Ubicacion",
+    "CITY": "Gandia, Valencia",
+    "EMAIL": "Email",
+    "INSTA": "Instagram",
+    "PHONE": "Telefono | Whatshap",
+    "WHATSAPP": "Reservar por Whatshap",
+    "CLOSE": "© 2026 Maysa Luxury Massages. Todos los derechos reservados."
+  },
+
   "COMMON": {
     "SPANISH": "Español",
     "ENGLISH": "Inglés"

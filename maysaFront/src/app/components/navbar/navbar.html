@@ -22,13 +22,13 @@
       </li>
       <li>
         <a routerLink="/experiences" routerLinkActive="active" (click)="closeMenu()"
-          >Experiencias</a
+          >{{ 'NAV.EXPERIENCES' | translate }}</a
         >
       </li>
       <li>
-        <a routerLink="/aboutus" routerLinkActive="active" (click)="closeMenu()">Sobre Maysa</a>
+        <a routerLink="/aboutus" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
       </li>
-      <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contacto</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a></li>
     </ul>
     <div class="language-selector">
       <button
