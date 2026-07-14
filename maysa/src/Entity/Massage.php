@@ -202,8 +202,22 @@ class Massage
                 $massageTranslation->setMassage(null);
             }
         }
-
         return $this;
     }
+
+    public function findTranslation(string $locale): ?MassageTranslation
+    {
+        foreach ($this->massageTranslations as $translation) {
+            if ($translation->getLocale() === $locale) {
+                return $translation;
+            }
+        }
+        // Fallback para en caso de no encontrar idioma que saque 'es'
+        if ($locale != 'es') {
+            return $this->findTranslation('es');
+        }
+        return null;
+    }
+
 
 }

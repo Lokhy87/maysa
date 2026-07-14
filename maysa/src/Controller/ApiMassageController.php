@@ -7,22 +7,28 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 final class ApiMassageController extends AbstractController
 {
     #[Route('/api/massages', name: 'app_api_massage')]
-    public function index(MassageRepository $massageRepository): Response
+    public function index(
+        MassageRepository $massageRepository,
+        Request $request
+    ): Response
     {
         $massages = $massageRepository->findAll();
+        $locale = $request->getPreferredLanguage(['es', 'en']) ?? 'es';
 
         $data = [];
 
         foreach ($massages as $massage) {
+            $translation = $massage->findTranslation($locale);
             $data[] = [
                 'id' => $massage->getId(),
                 'name' => $massage->getName(),
-                'subtitle' => $massage->getSubtitle(),
-                'description' => $massage->getDescription(),
+                'subtitle' => $translation?->getSubtitle() ?? $massage->getSubtitle(),
+                'description' => $translation?->getDescription() ?? $massage->getDescription(),
                 'image' => $massage->getImage(),
                 'active' => $massage->isActive(),
                 'position' => $massage->getPosition(),
@@ -36,8 +42,11 @@ final class ApiMassageController extends AbstractController
     }
 
     #[Route('/api/massages/{id}', name: 'app_id_massage')]
-    public function massage_id(MassageRepository $massageRepository,
-    int $id): Response
+    public function show(
+        MassageRepository $massageRepository,
+        int $id,
+        Request $request
+    ): Response
     {
         $massage = $massageRepository->find($id);
 
@@ -55,11 +64,14 @@ final class ApiMassageController extends AbstractController
             ];
         }
 
+        $locale = $request->getPreferredLanguage(['es', 'en']) ?? 'es';
+
+        $translation = $massage->findTranslation($locale);
         $data = [
             'id' => $massage->getId(),
             'name' => $massage->getName(),
-            'subtitle' => $massage->getSubtitle(),
-            'description' => $massage->getDescription(),
+            'subtitle' => $translation?->getSubtitle() ?? $massage->getSubtitle(),
+            'description' => $translation?->getDescription() ?? $massage->getDescription(),
             'image' => $massage->getImage(),
             'active' => $massage->isActive(),
             'position' => $massage->getPosition(),
