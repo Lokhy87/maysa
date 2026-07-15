@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Entity\MassageCollection;
 use App\Repository\MassageCollectionRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -13,7 +12,7 @@ use App\Mapper\MassageCollectionMapper;
 
 final class ApiMassageCollectionController extends AbstractController
 {
-    #[Route('/api/massage/collections', name: 'app_api_massage_collections')]
+    #[Route('/api/massage/collections', name: 'app_api_massage_collections', methods: ['GET'])]
     public function collections(
         MassageCollectionRepository $collectionRepository,
         Request $request,

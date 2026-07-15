@@ -47,7 +47,14 @@
     "P5": "Desde la atención personalizada hasta la selección de productos premium, todo está pensado para superar tus expectativas."
   },
 
-  "EXPERIENCES": {},
+  "EXPERIENCES": {
+    "H1": "Experiencias Maysa",
+    "BUTTON": "Descubrir Experiencia"
+  },
+
+  "MODAL": {
+    "A": "Reservar experiencia"
+  },
 
   "ABOUT": {
     "SPAN_1": "Sobre Maysa",

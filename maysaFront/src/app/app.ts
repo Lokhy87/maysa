@@ -2,7 +2,7 @@ import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
-import { LanguageService } from './service/lenguage.service.ts';
+import { LanguageService } from './service/language.service';
 
 @Component({
   selector: 'app-root',

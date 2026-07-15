@@ -47,7 +47,14 @@
     "P5": "From personalized attention to carefully selected premium products, every detail is designed to exceed your expectations."
   },
 
-  "EXPERIENCES": {},
+  "EXPERIENCES": {
+    "H1": "Maysa Experiences",
+    "BUTTON": "Discover Experience"
+  },
+
+  "MODAL": {
+    "A": "Book Experience"
+  },
 
   "ABOUT": {
     "SPAN_1": "About Maysa",

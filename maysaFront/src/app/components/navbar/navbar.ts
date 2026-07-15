@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
-import { LanguageService, SupportedLanguage } from '../../service/lenguage.service.ts';
+import { LanguageService, SupportedLanguage } from '../../service/language.service.js';
 
 @Component({
   selector: 'app-navbar',

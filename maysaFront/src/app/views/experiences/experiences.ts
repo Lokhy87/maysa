@@ -4,10 +4,11 @@ import { Massage } from '../../interfaces/massage.interface';
 import { MassageCollection } from '../../interfaces/massageCollection.interface';
 import { Modal } from '../../components/modal/modal';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-experiences',
-  imports: [Modal],
+  imports: [Modal, TranslatePipe],
   templateUrl: './experiences.html',
   styleUrl: './experiences.css',
 })
