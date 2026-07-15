@@ -34,9 +34,16 @@ class MassageCollection
     #[ORM\OneToMany(targetEntity: Massage::class, mappedBy: 'collection')]
     private Collection $massages;
 
+    /**
+     * @var Collection<int, MassageCollectionTranslation>
+     */
+    #[ORM\OneToMany(targetEntity: MassageCollectionTranslation::class, mappedBy: 'collection', cascade: ['persist', 'remove'], orphanRemoval: true)]
+    private Collection $massageCollectionTranslations;
+
     public function __construct()
     {
         $this->massages = new ArrayCollection();
+        $this->massageCollectionTranslations = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -121,4 +128,53 @@ class MassageCollection
 
         return $this;
     }
+
+    /**
+     * @return Collection<int, MassageCollectionTranslation>
+     */
+    public function getMassageCollectionTranslations(): Collection
+    {
+        return $this->massageCollectionTranslations;
+    }
+
+    public function addMassageCollectionTranslation(MassageCollectionTranslation $massageCollectionTranslation): static
+    {
+        if (!$this->massageCollectionTranslations->contains($massageCollectionTranslation)) {
+            $this->massageCollectionTranslations->add($massageCollectionTranslation);
+            $massageCollectionTranslation->setCollection($this);
+        }
+
+        return $this;
+    }
+
+    public function removeMassageCollectionTranslation(MassageCollectionTranslation $massageCollectionTranslation): static
+    {
+        if ($this->massageCollectionTranslations->removeElement($massageCollectionTranslation)) {
+            // set the owning side to null (unless already changed)
+            if ($massageCollectionTranslation->getCollection() === $this) {
+                $massageCollectionTranslation->setCollection(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function findTranslation(string $locale): ?MassageCollectionTranslation
+    {
+        foreach ($this->massageCollectionTranslations as $translation) {
+            if ($translation->getLocale() === $locale) {
+                return $translation;
+            }
+        }
+
+        if ($locale !== 'es') {
+            return $this->findTranslation('es');
+        }
+
+        return null;
+    }
+
+
+
+
 }
